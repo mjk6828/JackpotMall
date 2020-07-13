@@ -12,6 +12,6 @@ public class MainController {
 	@RequestMapping("Main.do")
 	public String Main() {
 		log.info("Main");
-		return "Main";
+		return "/mall/Main";
 	}
 }

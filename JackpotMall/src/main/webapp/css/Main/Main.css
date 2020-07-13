@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="kr">
-<head>
-    <meta charset="UTF-8">
-    <meta charset="utf-8">
-    <title>Document</title>
-    <style>
-        .clear{
+@charset "UTF-8";
+
+ .clear{
             clear: both;
         }
         *{
@@ -127,57 +122,3 @@
             background-color: #2c3e50;
             
         }
-
-    </style>
-</head>
-<body>
-    <header>
-        <div id="mainMenu, login">
-             <a href="shopping Mall Main.html"><img src='Main_menu_icons/Main_home_icon.png'></a>
-        </div>
-        <div id="searchproduct">
-            <div>
-                <input type="text" placeholder="검색어 입력">
-                <button><img src="login/search_icon.png" /></button>
-            </div>
-        </div>
-        <div id="maintitle"><b>Shopping mall</b></div>
-        <div id='login'>
-            <img src="Main_menu_icons/Login_icon.png">
-            <a href="login.html">로그인</a>
-        </div>
-    </header>
-
-    <nav>
-        <ul id='product_title'>
-            <li class="itme"><a href="">의류</li>
-            <li class="itme"><a href="">의류</li>
-            <li class="itme"><a href="">의류</li>
-            <li class="itme"><a href="">의류</li>
-            <li class="itme"><a href="">의류</li>
-
-        </ul>
-    </nav>
-
-    <section>
-      <div class="product-wrapper">
-          <div class="pro_photos"><img src="Main_menu_photos/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-          <div class="pro_photos"><img src="Main_menu_photos/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-          <div class="pro_photos"><img src="Main_menu_photos/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-          <div class="pro_photos"><img src="Main_menu_photos/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-          <div class="pro_photos"><img src="Main_menu_photos/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-      </div>
-      <div class="product-wrapper2">
-        <div class="pro_photos2"><img src="Main_menu_photos/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-        <div class="pro_photos2"><img src="Main_menu_photos/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-        <div class="pro_photos2"><img src="Main_menu_photos/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-        <div class="pro_photos2"><img src="Main_menu_photos/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-        <div class="pro_photos2"><img src="Main_menu_photos/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-    </div>
-    </section>
-
-    <footer>
-        footer
-    </footer>
-</body>
-</html>

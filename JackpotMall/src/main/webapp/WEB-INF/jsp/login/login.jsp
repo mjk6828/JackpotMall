@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta charset="utf-8">
-<title>Document</title>
+<title>로그인</title>
 <link rel="stylesheet" href="css/Login/login.css">
 </head>
 
@@ -37,9 +37,9 @@
 		</div>
 		<div class="click_signin">
 			<button>
-				<a href="Signin.do"> <input type="button" value="회원가입"
+				<input type="button" value="회원가입" click="./Signin.do"
 					style="height: 30px; width: 270px;">
-				</a>
+				
 			</button>
 		</div>
 		<div class="find_id_pawd">

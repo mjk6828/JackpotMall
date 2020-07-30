@@ -36,8 +36,8 @@
     </bean>
     -->
     
-<!--     	서버용
-        <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+    	<!-- 서버용 -->
+<!--         <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
         <property name="driverClass" value="org.mariadb.jdbc.Driver"></property>
         <property name="url" value="jdbc:mariadb://localhost:3306/jacpotg"></property>
         <property name="username" value="jacpotg"></property>

@@ -22,13 +22,14 @@ public class LoginController {
 	private UserService userService;
 
 	@RequestMapping(value = "/login.do")
-	public String Login() throws Exception {
+	public String Login(Model model) throws Exception {
 
 		List<UserVO> vo = userService.userlist();
 
 		log.info(vo.toString());
 		log.info(vo.size());
 
+		model.addAttribute("vo",vo);
 		return "login/login";
 	}
 

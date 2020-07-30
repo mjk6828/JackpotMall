@@ -47,6 +47,10 @@
 		<div class="find_id_pawd">
 			<a href="">아이디/비밀번호 찾기</a>
 		</div>
+		<c:forEach var="vo" items="${vo}">
+		<p>${vo.userid}</p>
+		<p>${vo.username}</p>
+		</c:forEach>
 	</div>
 
 

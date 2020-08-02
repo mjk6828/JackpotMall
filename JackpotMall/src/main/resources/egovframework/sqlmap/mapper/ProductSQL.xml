@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mall.mapper.ProductMapper">
+
+<!-- 	<resultMap id="sample" type="egovframework.example.sample.service.SampleVO">
+		<result property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="description" column="description"/>
+		<result property="useYn" column="use_yn"/>
+		<result property="regUser" column="reg_user"/>
+	</resultMap> -->
+
+	<select id="userlist" resultType="com.mall.vo.ProductVO">
+	
+	</select>
+
+	
+	<insert id="insertproduct" parameterType="com.mall.vo.ProductVO">
+	    insert into 
+	   				 testproduct(
+	    						p_name,
+	    						p_type,
+	    						p_image,
+	    						m_id,
+	    						p_stack)
+	 			 	  values(
+	    						#{p_name},
+	    						#{p_type},
+	    						#{p_image},
+	    						#{m_id})
+	</insert>
+	
+	<insert id="insertimage" parameterType="com.mall.vo.ProductImageVO">
+	    insert into 
+	    			product_image(
+	    							p_number,
+	    							ima_blob)
+	    			values(
+	    					#{p_number},
+	    					#{blob})
+	    			
+	    
+	</insert>
+</mapper>

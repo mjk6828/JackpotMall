@@ -1,124 +1,110 @@
 @charset "UTF-8";
 
- .clear{
-            clear: both;
-        }
-        *{
-            padding: 0;
-            margin: 0;
-        }
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #fffdef;
+}
+header {
+  width: 90%;
+  height: 70px;
+  background-color: rgb(44, 62, 80);
+  margin: 0 auto;
+}
+#maiMenu {
+  float: left;
+}
+#searchproduct {
+  float: left;
+  display: block;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+#maintitle {
+  float: right;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 30px;
+}
+#login {
+  float: right;
+  display: block;
+  margin-right: 30px;
+}
 
-        header{
-            width: 995px;
-            height: 45px;
-            margin-top: 10px;
-            display: flex;
-            border: solid 1px blue;
-            background-color: #2c3e50;
-            
-        }
-        #mainMenu {
-            float: left;
-        }
-        #searchproduct{
-            float: left;
-            display: block;
-            margin-left: 30px;
-            margin-top: 5px;
-        }
-        #maintitle{
-            float: right;
-            display: block;
-            margin: 0 auto;
-            margin-top: 3px;
-            margin-bottom: 3px;
-            font-size: 30px;
-            color: white;
-        
-        }
-        #login {
-            float: right;
-            display: block;
-            margin-right: 30px;
-            
-            
-        }
-        
-        
-        nav{
-            width: 995px;
-            height: 70px;
-            margin-top: 1px;
-            border: solid 1px blue;
-            background-color: #2c3e50;
-            
-        }
-        #product_title {
-            clear: both;
-            height: 10px;
-            text-align: center;
-            padding: 5px;
-            font-size: 20px;
-            
-        }
-        #product_title li {
-            display: inline;
+nav {
+  width: 90%;
+  height: 100px;
+  background-color: rgb(44, 62, 80);
+  margin: 0 auto;
+}
+#product_title {
+  clear: both;
+  height: 10px;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+#product_title li {
+  display: inline;
+}
+.item {
+  margin: 0 30px 0 30px;
+}
 
-        }
-        .itme {
-            margin: 0 30px 0 30px;
-            
-        }
+section {
+  overflow: hidden;
+  width: 90%;
+  height: 700px;
+  float: left;
+  margin: 0 auto;
+}
+section > div {
+  width: 10%;
+  float: left;
+  height: 200px;
+  margin: 6% 0 0 9%;
+  border: solid 1px blue;
+  border-radius: 5px;
+  text-align: center;
+}
 
-        section{
-            width: 995px;
-            height: 440px;
-            float: left;
-            margin-top: 10px;
-            border: solid 1px blue;
-        }
-        #product-wrapper{
-            width: 150px;
-            height: 170px;
-            margin: 0 auto;
-            border: solid 1px black;
-            
-        }
-        .pro_photos{
-            display: inline-block;
-            width: 130px;
-            height: 200px;
-            text-align: center;
-            border: solid 1px black;
-            margin: left;
-            margin: 0 10px;
-            margin-top: 5px;
-        }
-        #product-wrapper2{
-            width: 150px;
-            height: 170px;
-            margin: 0 auto;
-            border: solid 1px black;
-            
-        }
-        .pro_photos2{
-            display: inline-block;
-            width: 130px;
-            height: 200px;
-            text-align: center;
-            border: solid 1px black;
-            margin: left;
-            margin: 0 10px;
-            margin-top: 10px;
-        }
+footer {
+  width: 90%;
+  height: 100px;
+  clear: both;
+  margin: 0 auto;
+  background-color: rgb(44, 62, 80);
+}
 
-    
-        footer{
-            width: 995px;
-            height: 60px;
-            position: absolute;
-            bottom: 0;
-            border: soild 1px blue;
-            background-color: #2c3e50;
-            
-        }
+/*화면 너비 0 ~ 1200pox*/
+@media (min-width: 1220px), (max-width: 90%) {
+  section > div {
+    width: 23%;
+  }
+  section > div:ntn-child(5n) {
+    display: none;
+  }
+}
+/*화면 너비 0 ~ 768px*/
+@media (max-width: 768px) {
+  section > div {
+    width: 31.3333%;
+  }
+  section > div:ntn-child(5) {
+    display: block;
+  }
+}
+/*화면 너비 0 ! 480px*/
+@media (max-width: 480px) {
+  section > div {
+    width: 48%;
+  }
+  section > div:ntn-child(5n) {
+    display: block;
+  }
+}

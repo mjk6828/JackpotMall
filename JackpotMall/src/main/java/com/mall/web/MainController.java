@@ -19,16 +19,5 @@ public class MainController {
 		return "/mall/Main";
 	}
 	
-	@RequestMapping("/ProductRgst.do")
-	public String ProductRgst() throws Exception{
-		
-		return "/seller/ProductRgst";
-	}
-	
-	@RequestMapping(value="/FileUpload.do", method=RequestMethod.POST)
-	public void FileUpload(Model model, @RequestParam("ProductName") String ProductName, @RequestParam("ProductPrice") String ProductPrice,
-									@RequestParam("file") MultipartFile file) throws Exception{
-		log.info("파일이름: "+ProductName+"가격: "+ProductPrice+"file: "+file.getOriginalFilename());
-		
-	}
+
 }

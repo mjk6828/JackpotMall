@@ -1,38 +1,32 @@
 @charset "UTF-8";
 
-
-
-        .login {
-            width: 500px;
-            height: 400px;
+  .signin {
+            width: 390px;
+            height: 330px;
             border: solid 1px black;
-            margin: 20px auto;S
+            margin: 20px auto;
         }
 
-        .login_title {
+        .signin_title {
             margin: 15px 0 15px 0px;
             font-size: 20px;
             text-align: center;
         }
 
-        .input_id {
+        .sign_input_id {
             border: solid 1px black;
             margin: 5px 5px 5px 5px;
         }
 
-        .input_passwd {
+        .sign_input_passwd,
+        .sign_reinput_passwd,
+        .sign_input_name,
+        .sign_input_email {
             border: solid 1px black;
             margin: 10px 5px 5px 5px;
         }
 
-        .click_login,
         .click_signin {
-            margin: 10px 5px 5px 5px;
-            text-align: center;
-
-        }
-
-        .find_id_pawd {
-            margin: 10px 5px 5px 0px;
+            margin: 20px 5px 5px 5px;
             text-align: center;
         }

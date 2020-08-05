@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mall.mapper.UserMapper">
+
+<!-- 	<resultMap id="sample" type="egovframework.example.sample.service.SampleVO">
+		<result property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="description" column="description"/>
+		<result property="useYn" column="use_yn"/>
+		<result property="regUser" column="reg_user"/>
+	</resultMap> -->
+
+	<select id="userlist" resultType="com.mall.vo.UserVO">
+		select usernum AS num,
+				 userid AS id,
+				 username AS name,
+				 userpass AS pass,
+				 useremail AS email
+		from usertest
+	</select>
+
+</mapper>

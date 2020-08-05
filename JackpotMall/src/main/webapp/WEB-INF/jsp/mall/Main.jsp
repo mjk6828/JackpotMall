@@ -13,24 +13,80 @@
 <body>
  <jsp:include page="../include/header.jsp" />
 
+<div class="container">
+   <div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="images/shopping/unnamed.jpg">
+    </a>
+         <div class="caption">
+        <h3>Thumbnail label</h3>
+        </div>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="images/shopping/unnamed.jpg">
+    </a>
+    <div class="caption">
+        <h3>Thumbnail label</h3>
+        </div>
+  </div>
+    <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="images/shopping/unnamed.jpg">
 
+    </a>
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        </div>
+  </div>
+    <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="images/shopping/unnamed.jpg">
 
-    <section>
-      <div class="product-wrapper">
-          <div class="pro_photos"><img src="images/shopping/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-          <div class="pro_photos"><img src="images/shopping/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-          <div class="pro_photos"><img src="images/shopping/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-          <div class="pro_photos"><img src="images/shopping/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-          <div class="pro_photos"><img src="images/shopping/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-      </div>
-      <div class="product-wrapper2">
-        <div class="pro_photos2"><img src="images/shopping/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-        <div class="pro_photos2"><img src="images/shopping/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-        <div class="pro_photos2"><img src="images/shopping/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-        <div class="pro_photos2"><img src="images/shopping/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-        <div class="pro_photos2"><img src="images/shopping/unnamed.jpg"width=110px height="140px"><p>상품이름</p> <p>가격</p></div>
-    </div>
-    </section>
+    </a>
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        </div>
+  </div>
+    <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="images/shopping/unnamed.jpg">
+
+    </a>
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        </div>
+  </div>
+      <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="images/shopping/unnamed.jpg">
+
+    </a>
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        </div>
+  </div>
+      <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="images/shopping/unnamed.jpg">
+
+    </a>
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        </div>
+  </div>
+      <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="images/shopping/unnamed.jpg">
+
+    </a>
+          <div class="caption">
+        <h3>Thumbnail label</h3>
+        </div>
+  </div>
+</div>
+</div>  
 
 <jsp:include page="../include/footer.jsp" />
 </body>

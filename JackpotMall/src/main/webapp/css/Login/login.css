@@ -3,10 +3,10 @@
 
 
         .login {
-            width: 500px;
-            height: 400px;
+            width: 300px;
+            height: 250px;
             border: solid 1px black;
-            margin: 20px auto;S
+            margin: 20px auto;
         }
 
         .login_title {

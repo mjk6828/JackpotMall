@@ -11,11 +11,11 @@
 	</resultMap> -->
 
 	<select id="userlist" resultType="com.mall.vo.UserVO">
-		select usernum AS num,
-				 userid AS id,
-				 username AS name,
-				 userpass AS pass,
-				 useremail AS email
+		select num as usernum,
+				 id as userid,
+				 name as username,
+				 pass as userpass,
+				 email as email
 		from usertest
 	</select>
 

@@ -37,20 +37,21 @@
     -->
     
     	<!-- 서버용 -->
-       <!--  <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+        <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
         <property name="driverClass" value="org.mariadb.jdbc.Driver"></property>
         <property name="url" value="jdbc:mariadb://localhost:3306/jacpotg"></property>
         <property name="username" value="jacpotg"></property>
         <property name="password" value="jackpotmaster1!"></property>
-    </bean>  -->
+    </bean> 
 
 	<!-- 로컬 -->
-      <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+ <!--        <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
         <property name="driverClass" value="org.mariadb.jdbc.Driver"></property>
-        <property name="url" value="jdbc:mariadb://localhost:3306/mysql"></property>  <!-- 포트 뒤에 자신의 데이터베이스 이름 -->
+        <property name="url" value="jdbc:mariadb://localhost:3306/jackpotg"></property>
         <property name="username" value="root"></property>
         <property name="password" value="root"></property>
     </bean>
+ -->
     
     
 </beans>

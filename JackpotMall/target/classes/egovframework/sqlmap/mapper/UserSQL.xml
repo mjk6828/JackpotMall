@@ -12,10 +12,10 @@
 
 	<select id="userlist" resultType="com.mall.vo.UserVO">
 		select num as usernum,
-				 id as userid,
-				 name as username,
-				 pass as userpass,
-				 email as email
+				 id AS userid,
+				 name AS username,
+				 pass AS userpass,
+				 email AS useremail
 		from usertest
 	</select>
 

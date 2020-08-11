@@ -28,7 +28,7 @@ public class FileUploadController {
 	@RequestMapping(value="/FileUpload.do", method=RequestMethod.POST)
 	public void FileUpload(Model model, @RequestParam("ProductName") String ProductName, @RequestParam("ProductPrice") String ProductPrice,
 									@RequestParam("file") MultipartFile file) throws Exception{
-		log.info("파일이름: "+ProductName+"가격: "+ProductPrice+"file: "+file.getOriginalFilename());
+		//log.info("파일이름: "+ProductName+"가격: "+ProductPrice+"file: "+file.getOriginalFilename());
 			saveFile(file);
 	}
 	
@@ -49,7 +49,7 @@ public class FileUploadController {
 		
 		String saveName = uuid + "_" + file.getOriginalFilename();
 		
-		log.info("saveName : "+saveName);
+		//log.info("saveName : "+saveName);
 		
 		//저장할 File객체 생성(껍데기 파일)
 		File saveFile = new File(UPLOAD_PATH, saveName);//저장할 폴더 이름, 저장할 파일 이름

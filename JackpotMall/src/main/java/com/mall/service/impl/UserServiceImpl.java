@@ -22,7 +22,7 @@ public class UserServiceImpl implements UserService{
 	
 	@Override
 	public List<UserVO> userlist() throws Exception {
-		log.info("서비스호출");
+		//log.info("서비스호출");
 		return userMapper.userlist();
 	}
 

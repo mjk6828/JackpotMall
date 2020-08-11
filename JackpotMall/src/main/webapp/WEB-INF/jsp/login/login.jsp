@@ -1,59 +1,50 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta charset="utf-8">
-    <title>Document</title>
-    <link href="css/Login/login.css">
+<meta charset="UTF-8">
+<meta charset="utf-8">
+<title>로그인</title>
+<link rel="stylesheet" href="css/Login/login.css">
+<style type="text/css">
+	.loginform{
+		width:600px;
+		height:400px;
+	}
+</style>
 </head>
 
 <body>
-    <header>
-        
-    </header>
-<jsp:include page="../include/header.jsp" />
+	<jsp:include page="../include/header.jsp" />
 
-    <section>
+	<center>
+<div class="container">
+	<form class="loginform">
+  <div class="form-group">
+    <label for="exampleInputID1">아이디</label>
+    <input type="text" class="form-control" id="exampleInputID1" placeholder="아이디를 입력하세요">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">암호</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="암호">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> 입력을 기억합니다
+    </label>
+    
+  </div>
+ 
+ <div class="form-group">
+ 	<button type="button" class="btn btn-primary btn-lg btn-block">로그인</button>
+<button type="button" class="btn btn-default btn-lg btn-block">회원가입</button>
+ </div>
+</form>
 
-        <div class="login">
-            <div class="login_title">
-                로그인
-            </div>
-            <form>
-                <div class="input_id" style="height: 30px">
-                    <div style="margin-left: 10px;">
-                        아이디<input type="text" style="height: 17px; width: 200px; margin-left: 20px; margin-top: 5px;"
-                            placeholder="내용을 입력해주세요"><br>
-                    </div>
-                </div>
-                <div class="input_passwd" style="height: 30px">
-                    <div style="margin-left: 5px;">
-                        비밀번호<input type="password"
-                            style="height: 17px; width: 200px; margin-left: 10px; margin-top: 5px;"
-                            placeholder="내용을 입력해주세요"><br>
-                    </div>
-                </div>
-            </form>
-            <div class="click_login">
-                <input type="button" value="로그인" style="height: 30px; width: 270px;">
-            </div>
-            <div class="click_signin">
-                <button>
-                    <a href="Signin.do">
-                        <input type="button" value="회원가입" style="height: 30px; width: 270px;">
-                    </a>
-                </button>
-            </div>
-            <div class="find_id_pawd"><a href="">아이디/비밀번호 찾기</a></div>
-        </div>
-        </div>
-
-    </section>
-
-    <footer>
-        footer
-    </footer>
+</div>
+</center>
+<jsp:include page="../include/footer.jsp" />
 </body>
 </html>

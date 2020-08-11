@@ -1,97 +1,12 @@
 @charset "UTF-8";
 
- .clear {
-            clear: both;
-        }
 
-        * {
-            padding: 0;
-            margin: 0;
-        }
-
-        header {
-            width: 995px;
-            height: 45px;
-            margin-top: 10px;
-            display: flex;
-            border: solid 1px blue;
-            background-color: #2c3e50;
-
-        }
-
-        #maiMenu {
-            float: left;
-        }
-
-        #searchproduct {
-            float: left;
-            display: block;
-            margin-left: 30px;
-            margin-top: 5px;
-        }
-
-        #maintitle {
-            float: right;
-            display: block;
-            margin: 0 auto;
-            margin-top: 3px;
-            margin-bottom: 3px;
-            font-size: 30px;
-            color: white;
-
-        }
-
-        #login {
-            float: right;
-            display: block;
-            margin-right: 30px;
-
-
-        }
-
-
-        nav {
-            width: 995px;
-            height: 70px;
-            margin-top: 1px;
-            border: solid 1px blue;
-            background-color: #2c3e50;
-
-        }
-
-        #product_title {
-            clear: both;
-            height: 10px;
-            text-align: center;
-            padding: 5px;
-            font-size: 20px;
-
-        }
-
-        #product_title li {
-            display: inline;
-
-        }
-
-        .itme {
-            margin: 0 30px 0 30px;
-
-        }
-
-        section {
-            width: 995px;
-            height: 440px;
-            float: left;
-            margin-top: 10px;
-            border: solid 1px blue;
-            display: flex;
-        }
 
         .login {
-            width: 300px;
-            height: 250px;
+            width: 500px;
+            height: 400px;
             border: solid 1px black;
-            margin: 20px auto;
+            margin: 20px auto;S
         }
 
         .login_title {
@@ -120,14 +35,4 @@
         .find_id_pawd {
             margin: 10px 5px 5px 0px;
             text-align: center;
-        }
-
-        footer {
-            width: 995px;
-            height: 60px;
-            position: absolute;
-            bottom: 0;
-            border: soild 1px blue;
-            background-color: #2c3e50;
-
         }

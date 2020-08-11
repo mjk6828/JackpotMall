@@ -36,14 +36,27 @@
 		dispaly: table;
 		clear: both;
 	}
-	
+	.btn-groups{
+		position: absolute;
+		bottom:0;
+		right:0;
+		margin-bottom:10vh;
+		margin-right: 1vh;
+		
+	}
+	.row{
+		margin-bottom:5px;
+	}
+	.btn-group{
+		margin-top: 3vh;
+	}
 </style>
 </head>
 <body>
 	<jsp:include page="../include/header.jsp" />
-	<div class="row">
-		<div class="col-xs-2 col-md-4"></div>
-		<div class="col-xs-8 col-md-5 content">
+	<div class="container">
+		<div class="col-xs-2 col-md-2"></div>
+		<div class="col-xs-8 col-md-8 content">
 			<div class="product-images">
 				<div class="cur-image">
 					<img src="images/shopping/unnamed.jpg" alt="상품사진" class="img-thumbnail">
@@ -61,57 +74,68 @@
 					<hr>
 				</div>
 				<div class="row">
-					<div class="col-md-4 col-xs-5">
-						<h5>남은수량</h5>
+					<div class="col-md-4 col-xs-12">
+						<h5>가격</h5>
 					</div>
-					<div class="col-md-8 col-xs-7 text-right">
+					<div class="col-md-8 col-xs-12 text-right">
 						<h5>123,123</h5>
 					</div>
 					<hr>
 				</div>
 				<div class="row">
-					<div class="col-md-4 col-xs-5">
+					<div class="col-md-4 col-xs-12">
 						<h5>사이즈</h5>
 					</div>
-					<div class="col-md-8 col-xs-7 text-right">
-						<h5>123,123</h5>
+					<div class="col-md-8 col-xs-12 text-right">
+						<select class="form-control">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
 					</div>
 					<hr>
 				</div>
 				<div class="row">
-					<div class="col-md-4 col-xs-5">
-						<h5></h5>
+					<div class="col-md-4 col-xs-12">
 					</div>
-					<div class="col-md-8 col-xs-7 text-right">
-						<h5></h5>
+					<div class="col-md-8 col-xs-12 text-right">
 					</div>
-					<hr>
 				</div>
 				<div class="row">
-					<div class="col-md-4 col-xs-5">
-						<h5></h5>
+					<div class="col-md-4 col-xs-12">
+						<h5>색상</h5>
 					</div>
-					<div class="col-md-8 col-xs-7 text-right">
-						<h5></h5>
+					<div class="col-md-8 col-xs-12 text-right">
+						<select class="form-control">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
 					</div>
-					<hr>
 				</div>
 				<div class="row">
-					<div class="col-md-4 col-xs-5">
-						<h5></h5>
+					<div class="col-md-4 col-xs-12">
+						<h5>남은 수량</h5>
 					</div>
-					<div class="col-md-8 col-xs-7 text-right">
-						<h5></h5>
+					<div class="col-md-8 col-xs-12 text-right">
+						<h5>x개</h5>
 					</div>
-					<hr>
 				</div>
 				<div class="row text-right">
-					<button type="button" class="btn btn-default">장바구니</button>
-					<a href="#" class="btn btn-default">구매</a>
+					<div class="btn-group">
+						<div class="col-md-12 col-xs-12">
+							<button type="button" class="btn btn-default">장바구니</button>
+							<a href="#" class="btn btn-default">구매</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-2 col-md-3"></div>
+		<div class="col-xs-2 col-md-2"></div>
 	</div>
 	<div class="row">
 		<div class="col-xs-2 col-md-3"></div>

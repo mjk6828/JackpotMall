@@ -8,9 +8,12 @@ import lombok.ToString;
 @Getter@Setter@ToString
 public class UserVO {
 
-	private int num;
 	private String id;
-	private String pass;
 	private String name;
+	private String password;
+	private String address;
 	private String email;
+	private String phone;
+	private String regidate;
+	private String verify;
 }

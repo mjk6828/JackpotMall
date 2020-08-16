@@ -3,6 +3,8 @@ package com.mall.web;
 import java.util.List;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,29 +19,38 @@ import lombok.extern.log4j.Log4j2;
 @Log4j2
 @Controller
 public class LoginController {
-
 	@Resource(name = "UserService")
 	private UserService userService;
-
-	@RequestMapping(value = "/login.do")
-	public String Login(Model model) throws Exception {
-
-		List<UserVO> vo = userService.userlist();
-
-		//log.info(vo.toString());
-		//log.info(vo.size());
-
-		model.addAttribute("vo",vo);
+	
+	@RequestMapping(value = "/login.do", method = RequestMethod.GET)
+	public String Login(Model model, HttpServletRequest request) throws Exception {
+		/* 세션이 있으면 로그인 페이지로 이동*/
+		HttpSession session = request.getSession();
+		
+		if(session.getAttribute("uSession") != null)
+			return "redirect:Main.do";
+		
 		return "login/login";
 	}
-
+	// Login
 	@RequestMapping(value = "LoginForm.do", method = RequestMethod.POST)
-	public String LoginForm(Model model, UserVO vo) throws Exception {
-
-		//log.info(vo.toString());
+	public String LoginForm(HttpServletRequest request, UserVO vo) throws Exception {
+		HttpSession session = request.getSession();
+		UserVO user = null;
+		
+		if((user = userService.logincheck(vo)) == null)
+			return "redirect:login.do";
+		session.setAttribute("uSession", user);
 		return "redirect:Main.do";
 	}
-
+	@RequestMapping(value ="Logout.do", method = RequestMethod.GET)
+	public String Logout(HttpServletRequest request) throws Exception{
+		HttpSession session = request.getSession();
+		
+		session.removeAttribute("uSession");
+		
+		return "redirect:Main.do";
+	}
 	@RequestMapping(value = "/Signin.do", method = RequestMethod.GET)
 	public String Signin() throws Exception {
 

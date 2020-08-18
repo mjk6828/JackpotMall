@@ -11,13 +11,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.mall.vo.ProductVO;
+
 import lombok.extern.log4j.Log4j2;
 
 
 
 @Controller@Log4j2
 public class FileUploadController {
-	private static final String UPLOAD_PATH=  "/www";	
+	//파일 업로드 경로
+	private static final String UPLOAD_PATH=  "D:\\fileupload";
 	/*"D:\\fileupload"*/
 	@RequestMapping("/ProductRgst.do")
 	public String ProductRgst() throws Exception{
@@ -26,10 +29,18 @@ public class FileUploadController {
 	}
 	
 	@RequestMapping(value="/FileUpload.do", method=RequestMethod.POST)
-	public void FileUpload(Model model, @RequestParam("ProductName") String ProductName, @RequestParam("ProductPrice") String ProductPrice,
+	public void FileUpload(Model model, ProductVO pvo,
 									@RequestParam("file") MultipartFile file) throws Exception{
-		log.info("파일이름: "+ProductName+"가격: "+ProductPrice+"file: "+file.getOriginalFilename());
-			saveFile(file);
+		//log.info("파일이름: "+ProductName+"가격: "+ProductPrice+"file: "+file.getOriginalFilename());
+		String saveName = saveFile(file);
+			log.info(pvo.getProductName()+pvo.getProductPrice()+file.getName()+saveName+file.getSize()+file.getContentType());
+			
+			/*오리지날이름
+			사이즈
+			콘텐트타입*/
+			
+			
+			
 	}
 	
 /*	@RequestMapping(value="/Upload.do", method=RequestMethod.POST)
@@ -49,7 +60,7 @@ public class FileUploadController {
 		
 		String saveName = uuid + "_" + file.getOriginalFilename();
 		
-		log.info("saveName : "+saveName);
+		//log.info("saveName : "+saveName);
 		
 		//저장할 File객체 생성(껍데기 파일)
 		File saveFile = new File(UPLOAD_PATH, saveName);//저장할 폴더 이름, 저장할 파일 이름

@@ -8,6 +8,7 @@ import lombok.ToString;
 @Getter@Setter@ToString
 public class UserVO {
 
+<<<<<<< HEAD
 	private String id;
 	private String name;
 	private String password;
@@ -17,4 +18,12 @@ public class UserVO {
 	private String regidate;
 	private String verify;
 
+=======
+	private int usernum;
+	private String userid;
+	private String userpass;
+	private String userpasscheck;
+	private String username;
+	private String useremail;
+>>>>>>> refs/remotes/origin/master
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.mall.vo;
 
 
@@ -42,3 +43,25 @@ public class UserVO {
 	/** 권한 */
 	private char verify;
 }
+=======
+package com.mall.vo;
+
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Getter@Setter@ToString
+public class UserVO {
+
+	private String id;
+	private String name;
+	private String password;
+	private String address;
+	private String email;
+	private String phone;
+	private String regidate;
+	private String verify;
+
+}
+>>>>>>> 169afa6cdf9321bb61bb80b7dbe0692883382241

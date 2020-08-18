@@ -26,8 +26,8 @@ public class LoginController {
 
 		List<UserVO> vo = userService.userlist();
 
-		log.info(vo.toString());
-		log.info(vo.size());
+		//log.info(vo.toString());
+		//log.info(vo.size());
 
 		model.addAttribute("vo",vo);
 		return "login/login";
@@ -36,7 +36,7 @@ public class LoginController {
 	@RequestMapping(value = "LoginForm.do", method = RequestMethod.POST)
 	public String LoginForm(Model model, UserVO vo) throws Exception {
 
-		log.info(vo.toString());
+		//log.info(vo.toString());
 		return "redirect:Main.do";
 	}
 
@@ -49,7 +49,7 @@ public class LoginController {
 	@RequestMapping(value = "/SignUp.do", method = RequestMethod.POST)
 	public String Singup(Model model, UserVO vo) throws Exception {
 
-		log.info(vo.toString());
+		//log.info(vo.toString());
 		return "redirect:Main.do";
 	}
 }

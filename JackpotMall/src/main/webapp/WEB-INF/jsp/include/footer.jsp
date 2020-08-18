@@ -8,12 +8,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<footer> <nav class="navbar navbar-inverse">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<p class="navbar-text">footer</p>
-		</div>
-	</div>
-	</nav> </footer>
+	<footer> 
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<p class="navbar-text">footer</p>
+				</div>
+			</div>
+		</nav> 
+	</footer>
 </body>
 </html>

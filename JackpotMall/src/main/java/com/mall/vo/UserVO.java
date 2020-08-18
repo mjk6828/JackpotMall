@@ -16,4 +16,5 @@ public class UserVO {
 	private String phone;
 	private String regidate;
 	private String verify;
+
 }

@@ -54,14 +54,17 @@ import lombok.ToString;
 @Getter@Setter@ToString
 public class UserVO {
 
+	private int num;
 	private String id;
+	private String pass;
 	private String name;
-	private String password;
-	private String address;
 	private String email;
+<<<<<<< HEAD
 	private String phone;
 	private String regidate;
 	private String verify;
 
+=======
+>>>>>>> parent of 2bea7a3... VO변경
 }
 >>>>>>> 169afa6cdf9321bb61bb80b7dbe0692883382241

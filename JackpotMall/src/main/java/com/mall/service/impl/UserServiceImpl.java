@@ -26,4 +26,17 @@ public class UserServiceImpl implements UserService{
 		return userMapper.userlist();
 	}
 
+	/**
+	 * 로그인 할 때 사용자의 아이디 패스워드 확인
+	 * @param vo - 등록할 정보가 담긴 SampleVO
+	 * @return 실패시 null 성공시 UserVO 객체 반환
+	 * @exception Exception
+	 */
+	@Override
+	public UserVO logincheck(UserVO vo) throws Exception {
+		// TODO Auto-generated method stub
+
+		return userMapper.logincheck(vo);
+	}
+
 }

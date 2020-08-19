@@ -16,7 +16,7 @@
 <div class="container">
    <div class="row">
   <div class="col-xs-6 col-md-3">
-    <a href="./prod-detail.do?pnum=1" class="thumbnail">
+    <a href="#" class="thumbnail">
       <img src="images/shopping/unnamed.jpg">
     </a>
          <div class="caption">
@@ -24,7 +24,7 @@
         </div>
   </div>
   <div class="col-xs-6 col-md-3">
-    <a href="./prod-detail.do?pnum=1" class="thumbnail">
+    <a href="#" class="thumbnail">
       <img src="images/shopping/unnamed.jpg">
     </a>
     <div class="caption">
@@ -32,7 +32,7 @@
         </div>
   </div>
     <div class="col-xs-6 col-md-3">
-    <a href="./prod-detail.do?pnum=1" class="thumbnail">
+    <a href="#" class="thumbnail">
       <img src="images/shopping/unnamed.jpg">
 
     </a>
@@ -41,7 +41,7 @@
         </div>
   </div>
     <div class="col-xs-6 col-md-3">
-    <a href="./prod-detail.do?pnum=1" class="thumbnail">
+    <a href="#" class="thumbnail">
       <img src="images/shopping/unnamed.jpg">
 
     </a>
@@ -50,7 +50,7 @@
         </div>
   </div>
     <div class="col-xs-6 col-md-3">
-    <a href="./prod-detail.do?pnum=1" class="thumbnail">
+    <a href="#" class="thumbnail">
       <img src="images/shopping/unnamed.jpg">
 
     </a>
@@ -59,7 +59,7 @@
         </div>
   </div>
       <div class="col-xs-6 col-md-3">
-    <a href="./prod-detail.do?pnum=1" class="thumbnail">
+    <a href="#" class="thumbnail">
       <img src="images/shopping/unnamed.jpg">
 
     </a>
@@ -68,7 +68,7 @@
         </div>
   </div>
       <div class="col-xs-6 col-md-3">
-    <a href="./prod-detail.do?pnum=1" class="thumbnail">
+    <a href="#" class="thumbnail">
       <img src="images/shopping/unnamed.jpg">
 
     </a>
@@ -77,7 +77,7 @@
         </div>
   </div>
       <div class="col-xs-6 col-md-3">
-    <a href="./prod-detail.do?pnum=1" class="thumbnail">
+    <a href="#" class="thumbnail">
       <img src="images/shopping/unnamed.jpg">
 
     </a>

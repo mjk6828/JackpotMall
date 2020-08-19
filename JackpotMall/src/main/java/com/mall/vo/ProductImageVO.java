@@ -7,6 +7,8 @@ import lombok.ToString;
 @Getter@Setter@ToString
 public class ProductImageVO {
 
-	private String PruductName;
-	private String PruductPrice;
+	private int PruductImageNumber;
+	private String PruductImageName;
+	private int PruductImageSize;
+	private String PruductImageType;
 }

@@ -9,5 +9,4 @@ import egovframework.rte.psl.dataaccess.mapper.Mapper;
 public interface ProductMapper {
 
 	void insertproduct(ProductVO pvo) throws Exception;
-	void insertimage(ProductImageVO ivo) throws Exception;
 }

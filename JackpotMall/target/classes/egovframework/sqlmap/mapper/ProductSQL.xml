@@ -10,27 +10,28 @@
 		<result property="regUser" column="reg_user"/>
 	</resultMap> -->
 
-	<select id="userlist" resultType="com.mall.vo.ProductVO">
-	
-	</select>
-
 	
 	<insert id="insertproduct" parameterType="com.mall.vo.ProductVO">
 	    insert into 
-	   				 testproduct(
-	    						p_name,
-	    						p_type,
-	    						p_image,
-	    						m_id,
-	    						p_stack)
+	   				 producttest(
+	    						ProductName,
+	    						ProductSaveName,
+	    						ProductType,
+	    						ProductPrice,
+	    						ProductImagePath,
+	    						ProductStack,
+	    						ProductContent)
 	 			 	  values(
-	    						#{p_name},
-	    						#{p_type},
-	    						#{p_image},
-	    						#{m_id})
+	    						#{ProductName},
+	    						#{ProductSaveName},
+	    						#{ProductType},
+	    						#{ProductPrice},
+	    						#{ProductImagePath},
+	    						#{ProductStack},
+	    						#{ProductContent})
 	</insert>
 	
-	<insert id="insertimage" parameterType="com.mall.vo.ProductImageVO">
+<!-- 	<insert id="insertimage" parameterType="com.mall.vo.ProductImageVO">
 	    insert into 
 	    			product_image(
 	    							p_number,
@@ -40,5 +41,5 @@
 	    					#{blob})
 	    			
 	    
-	</insert>
+	</insert> -->
 </mapper>

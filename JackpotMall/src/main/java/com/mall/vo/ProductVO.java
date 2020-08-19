@@ -7,10 +7,12 @@ import lombok.ToString;
 @ToString@Getter@Setter
 public class ProductVO {
 
-	private int num;
-	private String name;
-	private String type;
-	private int price;
-	private int stack;
-	private String id;
+	private int ProductNum;
+	private String ProductName;
+	private String ProductSaveName;
+	private String ProductType;
+	private int ProductPrice;
+	private String ProductImagePath;
+	private int ProductStack;
+	private String ProductContent;
 }

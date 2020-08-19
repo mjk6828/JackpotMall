@@ -6,5 +6,5 @@ import com.mall.vo.ProductVO;
 public interface ProductService {
 
 	
-	void insertproduct(ProductVO pvo, ProductImageVO ivo) throws Exception;
+	void insertproduct(ProductVO pvo) throws Exception;
 }

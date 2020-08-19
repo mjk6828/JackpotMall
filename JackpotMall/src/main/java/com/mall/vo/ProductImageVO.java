@@ -7,5 +7,6 @@ import lombok.ToString;
 @Getter@Setter@ToString
 public class ProductImageVO {
 
-	private byte[] blob;
+	private String PruductName;
+	private String PruductPrice;
 }

@@ -11,12 +11,16 @@
 	</resultMap> -->
 
 	<select id="userlist" resultType="com.mall.vo.UserVO">
-		select usernum AS num,
-				 userid AS id,
-				 username AS name,
-				 userpass AS pass,
-				 useremail AS email
+		select num as usernum,
+				 id AS userid,
+				 name AS username,
+				 pass AS userpass,
+				 email AS useremail
 		from usertest
 	</select>
-
+	<select id="logincheck" parameterType="com.mall.vo.UserVO" resultType="com.mall.vo.UserVO">
+		select id, name, password, address, email, phone, regidate, verify
+		from member
+		where email = #{email} and password = #{password}			
+	</select>
 </mapper>
